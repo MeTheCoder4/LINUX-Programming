@@ -71,5 +71,6 @@ int main(int argc, char** argv) {
     }
 
     freeaddrinfo(addr_list);
+    close(sockfd);
     exit(EXIT_SUCCESS);
 }
